@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -50,9 +51,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(55, 224);
+            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(200, 66);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(130, 80);
             this.button1.TabIndex = 0;
             this.button1.Text = "1";
             this.button1.UseVisualStyleBackColor = true;
@@ -60,9 +62,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(136, 224);
+            this.button2.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(336, 66);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(130, 80);
             this.button2.TabIndex = 1;
             this.button2.Text = "2";
             this.button2.UseVisualStyleBackColor = true;
@@ -70,9 +73,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(219, 224);
+            this.button3.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(472, 66);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(130, 80);
             this.button3.TabIndex = 2;
             this.button3.Text = "3";
             this.button3.UseVisualStyleBackColor = true;
@@ -80,9 +84,10 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(55, 266);
+            this.button4.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(200, 152);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(130, 80);
             this.button4.TabIndex = 3;
             this.button4.Text = "4";
             this.button4.UseVisualStyleBackColor = true;
@@ -90,9 +95,10 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(136, 266);
+            this.button5.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(336, 152);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.Size = new System.Drawing.Size(130, 80);
             this.button5.TabIndex = 4;
             this.button5.Text = "5";
             this.button5.UseVisualStyleBackColor = true;
@@ -100,9 +106,10 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(217, 266);
+            this.button6.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(472, 152);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.Size = new System.Drawing.Size(130, 80);
             this.button6.TabIndex = 5;
             this.button6.Text = "6";
             this.button6.UseVisualStyleBackColor = true;
@@ -110,9 +117,10 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(55, 304);
+            this.button7.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Location = new System.Drawing.Point(200, 238);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.Size = new System.Drawing.Size(130, 80);
             this.button7.TabIndex = 6;
             this.button7.Text = "7";
             this.button7.UseVisualStyleBackColor = true;
@@ -120,9 +128,10 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(136, 304);
+            this.button8.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Location = new System.Drawing.Point(336, 238);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.Size = new System.Drawing.Size(130, 80);
             this.button8.TabIndex = 7;
             this.button8.Text = "8";
             this.button8.UseVisualStyleBackColor = true;
@@ -130,9 +139,10 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(217, 304);
+            this.button9.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Location = new System.Drawing.Point(472, 238);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 23);
+            this.button9.Size = new System.Drawing.Size(130, 80);
             this.button9.TabIndex = 8;
             this.button9.Text = "9";
             this.button9.UseVisualStyleBackColor = true;
@@ -140,9 +150,10 @@
             // 
             // clearButton
             // 
-            this.clearButton.Location = new System.Drawing.Point(55, 346);
+            this.clearButton.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearButton.Location = new System.Drawing.Point(200, 324);
             this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(75, 23);
+            this.clearButton.Size = new System.Drawing.Size(130, 80);
             this.clearButton.TabIndex = 9;
             this.clearButton.Text = "C";
             this.clearButton.UseVisualStyleBackColor = true;
@@ -150,9 +161,10 @@
             // 
             // button0
             // 
-            this.button0.Location = new System.Drawing.Point(136, 346);
+            this.button0.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button0.Location = new System.Drawing.Point(336, 324);
             this.button0.Name = "button0";
-            this.button0.Size = new System.Drawing.Size(75, 23);
+            this.button0.Size = new System.Drawing.Size(130, 80);
             this.button0.TabIndex = 10;
             this.button0.Text = "0";
             this.button0.UseVisualStyleBackColor = true;
@@ -160,9 +172,10 @@
             // 
             // equalsButton
             // 
-            this.equalsButton.Location = new System.Drawing.Point(219, 346);
+            this.equalsButton.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.equalsButton.Location = new System.Drawing.Point(472, 324);
             this.equalsButton.Name = "equalsButton";
-            this.equalsButton.Size = new System.Drawing.Size(75, 23);
+            this.equalsButton.Size = new System.Drawing.Size(130, 80);
             this.equalsButton.TabIndex = 11;
             this.equalsButton.Text = "=";
             this.equalsButton.UseVisualStyleBackColor = true;
@@ -170,16 +183,18 @@
             // 
             // display
             // 
-            this.display.Location = new System.Drawing.Point(12, 22);
+            this.display.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.display.Location = new System.Drawing.Point(12, 8);
             this.display.Name = "display";
-            this.display.Size = new System.Drawing.Size(776, 20);
+            this.display.Size = new System.Drawing.Size(776, 52);
             this.display.TabIndex = 12;
             // 
             // divide
             // 
-            this.divide.Location = new System.Drawing.Point(298, 224);
+            this.divide.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.divide.Location = new System.Drawing.Point(608, 66);
             this.divide.Name = "divide";
-            this.divide.Size = new System.Drawing.Size(75, 23);
+            this.divide.Size = new System.Drawing.Size(130, 80);
             this.divide.TabIndex = 13;
             this.divide.Text = "/";
             this.divide.UseVisualStyleBackColor = true;
@@ -187,9 +202,10 @@
             // 
             // multiply
             // 
-            this.multiply.Location = new System.Drawing.Point(298, 266);
+            this.multiply.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.multiply.Location = new System.Drawing.Point(608, 152);
             this.multiply.Name = "multiply";
-            this.multiply.Size = new System.Drawing.Size(75, 23);
+            this.multiply.Size = new System.Drawing.Size(130, 80);
             this.multiply.TabIndex = 14;
             this.multiply.Text = "X";
             this.multiply.UseVisualStyleBackColor = true;
@@ -197,9 +213,10 @@
             // 
             // add
             // 
-            this.add.Location = new System.Drawing.Point(298, 304);
+            this.add.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add.Location = new System.Drawing.Point(608, 238);
             this.add.Name = "add";
-            this.add.Size = new System.Drawing.Size(75, 23);
+            this.add.Size = new System.Drawing.Size(130, 80);
             this.add.TabIndex = 15;
             this.add.Text = "+";
             this.add.UseVisualStyleBackColor = true;
@@ -207,9 +224,10 @@
             // 
             // subtract
             // 
-            this.subtract.Location = new System.Drawing.Point(298, 346);
+            this.subtract.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subtract.Location = new System.Drawing.Point(608, 324);
             this.subtract.Name = "subtract";
-            this.subtract.Size = new System.Drawing.Size(75, 23);
+            this.subtract.Size = new System.Drawing.Size(130, 80);
             this.subtract.TabIndex = 16;
             this.subtract.Text = "-";
             this.subtract.UseVisualStyleBackColor = true;
@@ -219,6 +237,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BackgroundImage = global::alleeAssignment3Calculator.Properties.Resources.download;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.subtract);
             this.Controls.Add(this.add);
@@ -237,8 +257,9 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Nick\'s Amazing Calculator";
             this.ResumeLayout(false);
             this.PerformLayout();
 
