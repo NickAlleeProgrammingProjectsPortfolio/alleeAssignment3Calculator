@@ -192,7 +192,7 @@ namespace alleeAssignment3Calculator
         {
                 if (secondOperand == 0)
                  {
-                     firstOperand = Int32.Parse(display.Text);
+                     firstOperand = Double.Parse(display.Text);
                      display.Text = "0";
                      operationNumber = 1;
                  }
@@ -202,8 +202,8 @@ namespace alleeAssignment3Calculator
         {
                 if (secondOperand == 0)
                 {
-                    firstOperand = Int32.Parse(display.Text);
-                    display.Text += "-";
+                    firstOperand = Double.Parse(display.Text);
+                    display.Text = "0";
                     operationNumber = 2;
                 }
         }
@@ -213,8 +213,8 @@ namespace alleeAssignment3Calculator
         {
                 if (secondOperand == 0)
                 {
-                    firstOperand = Int32.Parse(display.Text);
-                    display.Text += "*";
+                    firstOperand = Double.Parse(display.Text);
+                    display.Text = "0";
                     operationNumber = 3;
                 }
         }
@@ -222,8 +222,8 @@ namespace alleeAssignment3Calculator
         {
                 if (secondOperand == 0)
                 {
-                    firstOperand = Int32.Parse(display.Text);
-                    display.Text += "/";
+                    firstOperand = Double.Parse(display.Text);
+                    display.Text = "0";
                     operationNumber = 4;
                 }
         }
