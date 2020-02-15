@@ -41,7 +41,11 @@
             this.button0 = new System.Windows.Forms.Button();
             this.equalsButton = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.display = new System.Windows.Forms.TextBox();
+            this.divide = new System.Windows.Forms.Button();
+            this.multiply = new System.Windows.Forms.Button();
+            this.add = new System.Windows.Forms.Button();
+            this.subtract = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -106,7 +110,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(55, 314);
+            this.button7.Location = new System.Drawing.Point(55, 304);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 23);
             this.button7.TabIndex = 6;
@@ -116,7 +120,7 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(136, 314);
+            this.button8.Location = new System.Drawing.Point(136, 304);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(75, 23);
             this.button8.TabIndex = 7;
@@ -126,7 +130,7 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(217, 314);
+            this.button9.Location = new System.Drawing.Point(217, 304);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(75, 23);
             this.button9.TabIndex = 8;
@@ -136,7 +140,7 @@
             // 
             // clearButton
             // 
-            this.clearButton.Location = new System.Drawing.Point(55, 356);
+            this.clearButton.Location = new System.Drawing.Point(55, 346);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(75, 23);
             this.clearButton.TabIndex = 9;
@@ -146,17 +150,17 @@
             // 
             // button0
             // 
-            this.button0.Location = new System.Drawing.Point(136, 356);
+            this.button0.Location = new System.Drawing.Point(136, 346);
             this.button0.Name = "button0";
             this.button0.Size = new System.Drawing.Size(75, 23);
             this.button0.TabIndex = 10;
             this.button0.Text = "0";
             this.button0.UseVisualStyleBackColor = true;
-            this.button0.Click += new System.EventHandler(this.button11_Click);
+            this.button0.Click += new System.EventHandler(this.button0_Click);
             // 
             // equalsButton
             // 
-            this.equalsButton.Location = new System.Drawing.Point(219, 356);
+            this.equalsButton.Location = new System.Drawing.Point(219, 346);
             this.equalsButton.Name = "equalsButton";
             this.equalsButton.Size = new System.Drawing.Size(75, 23);
             this.equalsButton.TabIndex = 11;
@@ -164,19 +168,63 @@
             this.equalsButton.UseVisualStyleBackColor = true;
             this.equalsButton.Click += new System.EventHandler(this.equalsButton_Click);
             // 
-            // textBox1
+            // display
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 22);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(776, 20);
-            this.textBox1.TabIndex = 12;
+            this.display.Location = new System.Drawing.Point(12, 22);
+            this.display.Name = "display";
+            this.display.Size = new System.Drawing.Size(776, 20);
+            this.display.TabIndex = 12;
+            // 
+            // divide
+            // 
+            this.divide.Location = new System.Drawing.Point(298, 224);
+            this.divide.Name = "divide";
+            this.divide.Size = new System.Drawing.Size(75, 23);
+            this.divide.TabIndex = 13;
+            this.divide.Text = "/";
+            this.divide.UseVisualStyleBackColor = true;
+            this.divide.Click += new System.EventHandler(this.divide_Click);
+            // 
+            // multiply
+            // 
+            this.multiply.Location = new System.Drawing.Point(298, 266);
+            this.multiply.Name = "multiply";
+            this.multiply.Size = new System.Drawing.Size(75, 23);
+            this.multiply.TabIndex = 14;
+            this.multiply.Text = "X";
+            this.multiply.UseVisualStyleBackColor = true;
+            this.multiply.Click += new System.EventHandler(this.multiply_Click);
+            // 
+            // add
+            // 
+            this.add.Location = new System.Drawing.Point(298, 304);
+            this.add.Name = "add";
+            this.add.Size = new System.Drawing.Size(75, 23);
+            this.add.TabIndex = 15;
+            this.add.Text = "+";
+            this.add.UseVisualStyleBackColor = true;
+            this.add.Click += new System.EventHandler(this.add_Click);
+            // 
+            // subtract
+            // 
+            this.subtract.Location = new System.Drawing.Point(298, 346);
+            this.subtract.Name = "subtract";
+            this.subtract.Size = new System.Drawing.Size(75, 23);
+            this.subtract.TabIndex = 16;
+            this.subtract.Text = "-";
+            this.subtract.UseVisualStyleBackColor = true;
+            this.subtract.Click += new System.EventHandler(this.subtract_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.subtract);
+            this.Controls.Add(this.add);
+            this.Controls.Add(this.multiply);
+            this.Controls.Add(this.divide);
+            this.Controls.Add(this.display);
             this.Controls.Add(this.equalsButton);
             this.Controls.Add(this.button0);
             this.Controls.Add(this.clearButton);
@@ -211,7 +259,11 @@
         private System.Windows.Forms.Button button0;
         private System.Windows.Forms.Button equalsButton;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox display;
+        private System.Windows.Forms.Button divide;
+        private System.Windows.Forms.Button multiply;
+        private System.Windows.Forms.Button add;
+        private System.Windows.Forms.Button subtract;
     }
 }
 
