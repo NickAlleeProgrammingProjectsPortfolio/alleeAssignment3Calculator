@@ -47,6 +47,9 @@
             this.multiply = new System.Windows.Forms.Button();
             this.add = new System.Windows.Forms.Button();
             this.subtract = new System.Windows.Forms.Button();
+            this.sqrtButton = new System.Windows.Forms.Button();
+            this.moduloButton = new System.Windows.Forms.Button();
+            this.decimalPoint = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -151,10 +154,10 @@
             // clearButton
             // 
             this.clearButton.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clearButton.Location = new System.Drawing.Point(200, 324);
+            this.clearButton.Location = new System.Drawing.Point(64, 324);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(130, 80);
-            this.clearButton.TabIndex = 9;
+            this.clearButton.TabIndex = 18;
             this.clearButton.Text = "C";
             this.clearButton.UseVisualStyleBackColor = true;
             this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
@@ -165,7 +168,7 @@
             this.button0.Location = new System.Drawing.Point(336, 324);
             this.button0.Name = "button0";
             this.button0.Size = new System.Drawing.Size(130, 80);
-            this.button0.TabIndex = 10;
+            this.button0.TabIndex = 9;
             this.button0.Text = "0";
             this.button0.UseVisualStyleBackColor = true;
             this.button0.Click += new System.EventHandler(this.button0_Click);
@@ -176,7 +179,7 @@
             this.equalsButton.Location = new System.Drawing.Point(472, 324);
             this.equalsButton.Name = "equalsButton";
             this.equalsButton.Size = new System.Drawing.Size(130, 80);
-            this.equalsButton.TabIndex = 11;
+            this.equalsButton.TabIndex = 17;
             this.equalsButton.Text = "=";
             this.equalsButton.UseVisualStyleBackColor = true;
             this.equalsButton.Click += new System.EventHandler(this.equalsButton_Click);
@@ -195,7 +198,7 @@
             this.divide.Location = new System.Drawing.Point(608, 66);
             this.divide.Name = "divide";
             this.divide.Size = new System.Drawing.Size(130, 80);
-            this.divide.TabIndex = 13;
+            this.divide.TabIndex = 11;
             this.divide.Text = "/";
             this.divide.UseVisualStyleBackColor = true;
             this.divide.Click += new System.EventHandler(this.divide_Click);
@@ -206,7 +209,7 @@
             this.multiply.Location = new System.Drawing.Point(608, 152);
             this.multiply.Name = "multiply";
             this.multiply.Size = new System.Drawing.Size(130, 80);
-            this.multiply.TabIndex = 14;
+            this.multiply.TabIndex = 12;
             this.multiply.Text = "X";
             this.multiply.UseVisualStyleBackColor = true;
             this.multiply.Click += new System.EventHandler(this.multiply_Click);
@@ -217,7 +220,7 @@
             this.add.Location = new System.Drawing.Point(608, 238);
             this.add.Name = "add";
             this.add.Size = new System.Drawing.Size(130, 80);
-            this.add.TabIndex = 15;
+            this.add.TabIndex = 13;
             this.add.Text = "+";
             this.add.UseVisualStyleBackColor = true;
             this.add.Click += new System.EventHandler(this.add_Click);
@@ -228,10 +231,43 @@
             this.subtract.Location = new System.Drawing.Point(608, 324);
             this.subtract.Name = "subtract";
             this.subtract.Size = new System.Drawing.Size(130, 80);
-            this.subtract.TabIndex = 16;
+            this.subtract.TabIndex = 14;
             this.subtract.Text = "-";
             this.subtract.UseVisualStyleBackColor = true;
             this.subtract.Click += new System.EventHandler(this.subtract_Click);
+            // 
+            // sqrtButton
+            // 
+            this.sqrtButton.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sqrtButton.Location = new System.Drawing.Point(64, 66);
+            this.sqrtButton.Name = "sqrtButton";
+            this.sqrtButton.Size = new System.Drawing.Size(130, 80);
+            this.sqrtButton.TabIndex = 15;
+            this.sqrtButton.Text = "sqrt()";
+            this.sqrtButton.UseVisualStyleBackColor = true;
+            this.sqrtButton.Click += new System.EventHandler(this.sqrtButton_Click);
+            // 
+            // moduloButton
+            // 
+            this.moduloButton.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.moduloButton.Location = new System.Drawing.Point(64, 152);
+            this.moduloButton.Name = "moduloButton";
+            this.moduloButton.Size = new System.Drawing.Size(130, 80);
+            this.moduloButton.TabIndex = 16;
+            this.moduloButton.Text = "%";
+            this.moduloButton.UseVisualStyleBackColor = true;
+            this.moduloButton.Click += new System.EventHandler(this.moduloButton_Click);
+            // 
+            // decimalPoint
+            // 
+            this.decimalPoint.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.decimalPoint.Location = new System.Drawing.Point(200, 324);
+            this.decimalPoint.Name = "decimalPoint";
+            this.decimalPoint.Size = new System.Drawing.Size(130, 80);
+            this.decimalPoint.TabIndex = 10;
+            this.decimalPoint.Text = ".";
+            this.decimalPoint.UseVisualStyleBackColor = true;
+            this.decimalPoint.Click += new System.EventHandler(this.decimalPoint_Click);
             // 
             // Form1
             // 
@@ -240,6 +276,9 @@
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.BackgroundImage = global::alleeAssignment3Calculator.Properties.Resources.download;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.decimalPoint);
+            this.Controls.Add(this.moduloButton);
+            this.Controls.Add(this.sqrtButton);
             this.Controls.Add(this.subtract);
             this.Controls.Add(this.add);
             this.Controls.Add(this.multiply);
@@ -285,6 +324,9 @@
         private System.Windows.Forms.Button multiply;
         private System.Windows.Forms.Button add;
         private System.Windows.Forms.Button subtract;
+        private System.Windows.Forms.Button sqrtButton;
+        private System.Windows.Forms.Button moduloButton;
+        private System.Windows.Forms.Button decimalPoint;
     }
 }
 

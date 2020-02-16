@@ -61,7 +61,7 @@ namespace alleeAssignment3Calculator
         {
             if (display.Text == "0" && display.Text != null)
             {
-                display.Text = "5";
+                display.Text = "4";
             }
             else
             {
@@ -130,11 +130,7 @@ namespace alleeAssignment3Calculator
         }
         private void button0_Click(object sender, EventArgs e)
         {
-            if (firstOperand == 0)
-            {
-                display.Text = "0";
-            }
-            else
+            if (display.Text != "0")
             {
                 display.Text += "0";
             }
@@ -184,6 +180,10 @@ namespace alleeAssignment3Calculator
                 {
                     answer = firstOperand / secondOperand;
                 }
+                if (operationNumber == 5)
+                {
+                    answer = firstOperand % secondOperand;
+                }
             return answer;
         }
 
@@ -226,6 +226,37 @@ namespace alleeAssignment3Calculator
                     display.Text = "0";
                     operationNumber = 4;
                 }
+        }
+
+        private void decimalPoint_Click(object sender, EventArgs e)
+        {
+            if (display.Text == "0" && display.Text != null)
+            {
+                display.Text = ".";
+            }
+            else
+            {
+                display.Text += ".";
+            }
+
+        }
+
+        private void sqrtButton_Click(object sender, EventArgs e)
+        {
+            double num = Convert.ToDouble(display.Text);
+            double result = Math.Sqrt(num);
+            display.Text = Convert.ToString(result);
+        }
+
+        private void moduloButton_Click(object sender, EventArgs e)
+        {
+            if (secondOperand == 0)
+            {
+                firstOperand = Double.Parse(display.Text);
+                display.Text = "0";
+                operationNumber = 5;
+            }
+
         }
     }
 }
