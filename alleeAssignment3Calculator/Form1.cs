@@ -23,116 +23,146 @@ namespace alleeAssignment3Calculator
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (display.Text == "0" && display.Text != null)
+            if (display.Text != "Cannot Divide By 0!!!")
             {
-                display.Text = "1";
-            }
-            else
-            {
-                display.Text += "1";
+                if (display.Text == "0" && display.Text != null)
+                {
+                    display.Text = "1";
+                }
+                else
+                {
+                    display.Text += "1";
+                }
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (display.Text == "0" && display.Text != null)
+            if (display.Text != "Cannot Divide By 0!!!")
             {
-                display.Text = "2";
-            }
-            else
-            {
-                display.Text += "2";
+                if (display.Text == "0" && display.Text != null)
+                {
+                    display.Text = "2";
+                }
+                else
+                {
+                    display.Text += "2";
+                }
             }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (display.Text == "0" && display.Text != null)
+            if (display.Text != "Cannot Divide By 0!!!")
             {
-                display.Text = "3";
-            }
-            else
-            {
-                display.Text += "3";
+                if (display.Text == "0" && display.Text != null)
+                {
+                    display.Text = "3";
+                }
+                else
+                {
+                    display.Text += "3";
+                }
             }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (display.Text == "0" && display.Text != null)
+            if (display.Text != "Cannot Divide By 0!!!")
             {
-                display.Text = "4";
-            }
-            else
-            {
-                display.Text += "4";
+                if (display.Text == "0" && display.Text != null)
+                {
+                    display.Text = "4";
+                }
+                else
+                {
+                    display.Text += "4";
+                }
             }
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            if (display.Text == "0" && display.Text != null)
+            if (display.Text != "Cannot Divide By 0!!!")
             {
-                display.Text = "5";
-            }
-            else
-            {
-                display.Text += "5";
+                if (display.Text == "0" && display.Text != null)
+                {
+                    display.Text = "5";
+                }
+                else
+                {
+                    display.Text += "5";
+                }
             }
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            if (display.Text == "0" && display.Text != null)
+            if (display.Text != "Cannot Divide By 0!!!")
             {
-                display.Text = "6";
-            }
-            else
-            {
-                display.Text += "6";
+                if (display.Text == "0" && display.Text != null)
+                {
+                    display.Text = "6";
+                }
+                else
+                {
+                    display.Text += "6";
+                }
             }
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            if (display.Text == "0" && display.Text != null)
+            if (display.Text != "Cannot Divide By 0!!!")
             {
-                display.Text = "7";
-            }
-            else
-            {
-                display.Text += "7";
+                if (display.Text == "0" && display.Text != null)
+                {
+                    display.Text = "7";
+                }
+                else
+                {
+                    display.Text += "7";
+                }
             }
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            if (display.Text == "0" && display.Text != null)
+            if (display.Text != "Cannot Divide By 0!!!")
             {
-                display.Text = "8";
-            }
-            else
-            {
-                display.Text += "8";
+                if (display.Text == "0" && display.Text != null)
+                {
+                    display.Text = "8";
+                }
+                else
+                {
+                    display.Text += "8";
+                }
             }
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            if (display.Text == "0" && display.Text != null)
+            if (display.Text != "Cannot Divide By 0!!!")
             {
-                display.Text = "9";
-            }
-            else
-            {
-                display.Text += "9";
+                if (display.Text == "0" && display.Text != null)
+                {
+                    display.Text = "9";
+                }
+                else
+                {
+                    display.Text += "9";
+                }
             }
         }
         private void button0_Click(object sender, EventArgs e)
         {
-            if (display.Text != "0")
+            if (display.Text != "Cannot Divide By 0!!!")
             {
-                display.Text += "0";
+                if (display.Text != "0")
+                {
+                    display.Text += "0";
+                }
             }
         }
         private void clearButton_Click(object sender, EventArgs e)
@@ -149,12 +179,23 @@ namespace alleeAssignment3Calculator
 
         private void equalsButton_Click(object sender, EventArgs e)
         {
-            secondOperand = Double.Parse(display.Text);
-            double  answer = operationFn();
-            // need to typecast double to string and display it
-            clearall();
-            display.Text = answer.ToString();
-            firstOperand = answer;
+            if (display.Text != "Cannot Divide By 0!!!")
+            {
+                if (display.Text != "0" & operationNumber != 4)
+                {
+                    secondOperand = Double.Parse(display.Text);
+                    double answer = operationFn();
+                    // need to typecast double to string and display it
+                    clearall();
+                    display.Text = answer.ToString();
+                    firstOperand = answer;
+                }
+                else
+                {
+                    display.Text = "Cannot Divide By 0!!!";
+                    clearall();
+                }
+            }
         }
 
         // this gets called by the equals button
@@ -190,7 +231,7 @@ namespace alleeAssignment3Calculator
 
         private void add_Click(object sender, EventArgs e)
         {
-                if (secondOperand == 0)
+                if (secondOperand == 0 && display.Text != "Cannot Divide By 0!!!")
                  {
                      firstOperand = Double.Parse(display.Text);
                      display.Text = "0";
@@ -200,7 +241,7 @@ namespace alleeAssignment3Calculator
 
         private void subtract_Click(object sender, EventArgs e)
         {
-                if (secondOperand == 0)
+                if (secondOperand == 0 && display.Text != "Cannot Divide By 0!!!")
                 {
                     firstOperand = Double.Parse(display.Text);
                     display.Text = "0";
@@ -211,7 +252,7 @@ namespace alleeAssignment3Calculator
 
         private void multiply_Click(object sender, EventArgs e)
         {
-                if (secondOperand == 0)
+                if (secondOperand == 0 && display.Text != "Cannot Divide By 0!!!")
                 {
                     firstOperand = Double.Parse(display.Text);
                     display.Text = "0";
@@ -220,12 +261,14 @@ namespace alleeAssignment3Calculator
         }
         private void divide_Click(object sender, EventArgs e)
         {
-                if (secondOperand == 0)
+            if (secondOperand == 0 && display.Text != "Cannot Divide By 0!!!")
+            {
                 {
                     firstOperand = Double.Parse(display.Text);
                     display.Text = "0";
                     operationNumber = 4;
                 }
+            }
         }
 
         private void decimalPoint_Click(object sender, EventArgs e)
@@ -243,14 +286,17 @@ namespace alleeAssignment3Calculator
 
         private void sqrtButton_Click(object sender, EventArgs e)
         {
-            double num = Convert.ToDouble(display.Text);
-            double result = Math.Sqrt(num);
-            display.Text = Convert.ToString(result);
+            if (display.Text != "Cannot Divide By 0!!!" && display.Text != "0")
+            {
+                double num = Convert.ToDouble(display.Text);
+                double result = Math.Sqrt(num);
+                display.Text = Convert.ToString(result);
+            }
         }
 
         private void moduloButton_Click(object sender, EventArgs e)
         {
-            if (secondOperand == 0)
+            if (secondOperand == 0 && display.Text != "Cannot Divide By 0!!!")
             {
                 firstOperand = Double.Parse(display.Text);
                 display.Text = "0";
