@@ -286,7 +286,7 @@ namespace alleeAssignment3Calculator
 
         private void sqrtButton_Click(object sender, EventArgs e)
         {
-            if (display.Text != "Cannot Divide By 0!!!" && display.Text != "0")
+            if (display.Text != "Cannot Divide By 0!!!" && display.Text != "0" && display.Text != "-1")
             {
                 double num = Convert.ToDouble(display.Text);
                 double result = Math.Sqrt(num);
