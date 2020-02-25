@@ -181,7 +181,7 @@ namespace alleeAssignment3Calculator
         {
             if (display.Text != "Cannot Divide By 0!!!")
             {
-                if (display.Text != "0" & operationNumber != 4)
+                if (display.Text != "0")
                 {
                     secondOperand = Double.Parse(display.Text);
                     double answer = operationFn();
@@ -190,7 +190,7 @@ namespace alleeAssignment3Calculator
                     display.Text = answer.ToString();
                     firstOperand = answer;
                 }
-                else
+                if (display.Text == "0" && operationNumber == 4)
                 {
                     display.Text = "Cannot Divide By 0!!!";
                     clearall();
